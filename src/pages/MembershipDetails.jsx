@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Membership() {
+export default function MembershipDetails() {
   const fees = [
     { type: "Family Membership", amount: "$40" },
     { type: "Single Adult Membership", amount: "$30" },
