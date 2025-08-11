@@ -1,5 +1,6 @@
 import React from "react";
 import { LinkButton } from "../components/ui/LinkButton.jsx"; // Adjust the path if needed
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -50,12 +51,12 @@ export default function About() {
           Ready to be part of something meaningful? Enjoy exclusive events and
           community programs.
         </p>
-        <a
-          href="/membershipdetails"
-          className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold px-6 py-2 rounded"
-        >
-          Join Us
-        </a>
+        <Link
+  to="/membershipdetails"
+  className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold px-6 py-2 rounded"
+>
+  Join Us
+</Link>
       </div> 
       { /* <div className="mt-10 bg-yellow-50 border border-yellow-300 rounded-xl p-6 sm:p-8 text-center shadow-md animate-fadeIn">
         <h3 className="text-2xl font-bold text-brand mb-3">Become a Member</h3>

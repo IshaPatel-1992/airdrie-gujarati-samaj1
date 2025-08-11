@@ -2,6 +2,7 @@ import React from "react";
 import diya from "../assets/Events/Diwali1 (3).jpg";
 import garba from "../assets/Events/Navratri.png";
 import picnic from "../assets/Events/Picnic.jpg";
+import { Link } from "react-router-dom";
 export default function EventsComponent() {
     const events = [
         {
@@ -45,12 +46,12 @@ export default function EventsComponent() {
               </h3>
               <p className="text-sm font-medium">{event.date}</p>
               <p className="text-sm text-gray-600 mb-4">{event.location}</p>
-              <a
+              <Link
                 href="/events"
                 className="inline-block bg-yellow-500 hover:bg-yellow-400 text-white font-medium px-4 py-2 rounded-full transition"
               >
                 View Details
-              </a>
+              </Link>
             </div>
           </div>
         ))}
